@@ -13,12 +13,10 @@ import android.widget.Toast;
 import static android.view.View.GONE;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         final EditText pd = (EditText)findViewById(R.id.pd);
         final EditText cf_pd = (EditText)findViewById(R.id.confirm_pd);

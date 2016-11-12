@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Lab7</string>
+
+    <string name="login_ok_button">ok</string>
+    <string name="login_clear_button">clear</string>
+
+    <string name="file_save_button">save</string>
+    <string name="file_load_button">load</string>
+    <string name="file_clear_button">clear</string>
 </resources>

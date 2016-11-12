@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/file_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/file_edit_margin"
+        android:layout_weight="0.98"
+        android:gravity="top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/file_button_margin"
+            android:layout_alignParentLeft="true"
+            android:text="@string/file_save_button"/>
+
+        <Button
+            android:id="@+id/load_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/file_button_margin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/file_load_button"/>
+
+        <Button
+            android:id="@+id/clear_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/file_button_margin"
+            android:layout_alignParentRight="true"
+            android:text="@string/file_clear_button"/>
+    </RelativeLayout>
+
+</LinearLayout>

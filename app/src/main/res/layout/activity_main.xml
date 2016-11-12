@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/new_pd"
+    <LinearLayout
+        android:id="@+id/input_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="New Password"
-        android:layout_gravity="center"
-        android:inputType="textPassword" />
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/input_edit_margin"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/pd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:inputType="numberPassword" />
+        <EditText
+            android:id="@+id/confirm_pd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="numberPassword" />
 
-    <EditText
-        android:id="@+id/confirm_pd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Confirm Password"
-        android:cursorVisible="false"
-        android:inputType="textPassword" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/login_button_margin"
+                android:text="@string/login_ok_button"/>
 
+            <Button
+                android:id="@+id/clear_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/login_button_margin"
+                android:text="@string/login_clear_button"/>
 
-</LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
